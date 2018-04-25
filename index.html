@@ -33,9 +33,10 @@
 
     h1,h2,h3,h4 {
       display: inline;
+      margin: 0.5em 0;
     }
 
-    .seal {
+    .person {
       float: none;
       display: inline-block;
       font-size: 16px;
@@ -45,6 +46,13 @@
       padding: 0px 0px;
       padding-bottom: 10px;
     }
+
+    /* news section's line break looks ugly in mobile view */
+    h5 {
+      line-height: 1.4;
+      padding: 0px;
+    }
+
 
     .person {
       float: none;
@@ -61,7 +69,6 @@
       display: inline-block;
     }
 
-
     .person-extra {
       float: none;
       display: inline-block;
@@ -72,16 +79,36 @@
       padding: 0px 0px;
       padding-bottom: 10px;
     }
+    
 
-    .person-extra img {
-      display: inline-block;
+    .project img {
+      max-width: 85%;
+      max-height: 200px;
+      display: block;
+      margin: 0 auto;
     }
 
-    .paper-list {
-      list-style: none;
-      margin-left: 0;
-      padding-left: 1em;
-      text-indent: -1em;
+    .list ul,ol {
+      padding-top: 10px;
+    }
+    .list li {
+      padding: 5px;
+    }
+    
+    .panel-body {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+    
+    .seal {
+      float: none;
+      display: inline-block;
+      font-size: 16px;
+      text-align: center;
+      vertical-align: top;
+      margin: 0px 0px;
+      padding: 0px 0px;
+      padding-bottom: 10px;
     }
 
     .paper-list img {
@@ -221,121 +248,123 @@
           </div>
         </div>
 
-        <div class="col-xs-12 col-md-12 col-lg-12" style="padding: 0 0; margin: 0 0;">
-          <div class="container-fluid" style="margin: 0 0; padding: 0 0;"><a name="people"></a>
-            <div class="row no-gutter" style="font-size: 0px;">
+        <div class="col-xs-12 col-md-12 col-lg-12">
+          <div class="panel-default">
+            <!--        <div class="container-fluid" style="margin: 0 0; padding: 0 0;">-->
+            <div class="panel-heading"><h4><a name="people"></a>People</h4></div>
+            <div class="panel-body">
+              <div class="row no-gutter" style="font-size: 0px; padding-top: 10px">
+                <center>
 
-              <center>
+                <div class="person col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                  <a href="http://www.andrew.cmu.edu/user/danupam/">
+                    <img class="img-rounded img-responsive"
+                         src="images/person/thumbs/anupam.jpeg"/><br>
+                    Anupam Datta</a><br/>CMU<br/>(principal investigator)
+                </div>
 
-            <div class="person col-xs-6 col-sm-4 col-md-3 col-lg-2">
-              <a href="http://www.andrew.cmu.edu/user/danupam/">
-                <img class="img-rounded img-responsive"
-                     src="images/person/thumbs/anupam.jpeg"/><br>
-                Anupam Datta</a><br/>CMU<br/>(principal investigator)
+                <div class="person col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                  <a href="http://www.cs.cmu.edu/~mfredrik/">
+                    <img class="img-rounded img-responsive"
+                         src="images/person/thumbs/matt.jpeg"/><br/>
+                    Matt Fredrikson</a><br/>CMU<br/>(co-principal investigator)
+                </div>
+
+                <div class="person col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                  <a href="https://www.cylab.cmu.edu/education/faculty/mengshoel.html">
+                    <img class="img-rounded img-responsive"
+                         src="images/person/thumbs/ole.jpeg"/><br/>
+                    Ole Mengshoel</a><br/>CMU<br/>(co-principal investigator)
+                </div>
+
+                <div class="person col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                  <a href="https://nissenbaum.tech.cornell.edu">
+                    <img class="img-rounded img-responsive"
+                         src="images/person/thumbs/helen.jpeg"/><br/>
+                    Helen Nissenbaum</a><br/>Cornell Tech<br/>(co-principal investigator)
+                </div>
+
+                <div class="person col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                  <a href="https://rist.tech.cornell.edu/">
+                    <img class="img-rounded img-responsive"
+                         src="images/person/thumbs/tom.jpeg"/><br/>
+                    Tom Ristenpart</a><br/>Cornell Tech<br/>(co-principal investigator)
+                </div>
+
+                <div class="person col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                  <a href="http://www1.icsi.berkeley.edu/~mct/">
+                    <img class="img-rounded img-responsive"
+                         src="images/person/thumbs/michael.jpeg"/><br/>
+                    Michael C. Tschantz</a><br/>ICSI<br/>(co-principal investigator)
+                </div>
+
+                <div class="person-extra col-xs-3 col-sm-2 col-md-2 col-lg-1">
+                  <a href="http://piotr.mardziel.com">
+                    <img class="img-rounded img-responsive"
+                         src="images/person/thumbs/piotr.jpeg"/><br/>
+                    Piotr Mardziel</a><br/>CMU<br/>(senior person)
+                </div>
+
+                <div class="person-extra col-xs-3 col-sm-2 col-md-2 col-lg-1">
+                  <a href="http://www.andrew.cmu.edu/user/achoulde">
+                    <img class="img-rounded img-responsive"
+                         src="images/person/thumbs/alexandra.jpeg"/><br/>
+                    Alexandra Chouldechova</a><br/>CMU<br/>(collaborator)
+                </div>
+
+                <div class="person-extra col-xs-3 col-sm-2 col-md-2 col-lg-1">
+                  <a href="http://saikat.guha.cc/">
+                    <img class="img-rounded img-responsive"
+                         src="images/person/thumbs/saikat.jpeg"/><br/>
+                    Saikat Guha</a><br/>Microsoft Research<br/>(collaborator)
+                </div>
+
+                <div class="person-extra col-xs-3 col-sm-2 col-md-2 col-lg-1">
+                  <a href="http://www.cs.cmu.edu/~./neill/">
+                    <img class="img-rounded img-responsive"
+                         src="images/person/thumbs/daniel.jpeg"/><br/>
+                    Daniel Neill</a><br/>CMU<br/>(collaborator)
+                </div>
+
+                <div class="person-extra col-xs-3 col-sm-2 col-md-2 col-lg-1">
+                  <a href="http://pages.cs.wisc.edu/~dpage/">
+                    <img class="img-rounded img-responsive"
+                         src="images/person/thumbs/david.jpeg"/><br/>
+                    David Page</a><br/>University of
+                  Wisconsin-Madison<br/>(collaborator, advisory board)
+                </div>
+
+                <div class="person-extra col-xs-3 col-sm-2 col-md-2 col-lg-1">
+                  <a href="http://www.heinz.cmu.edu/faculty-and-research/faculty-profiles/faculty-details/index.aspx?faculty_id=9">
+                    <img class="img-rounded img-responsive"
+                         src="images/person/thumbs/alfred.jpeg"/><br/>
+                    Alfred Blumstein</a><br/>CMU<br/>(advisory board)
+                </div>
+
+                <div class="person-extra col-xs-3 col-sm-2 col-md-2 col-lg-1">
+                  <a href="http://www.law.nyu.edu/centers/adminofcriminallaw/facultyandstaff/annemilgram">
+                    <img class="img-rounded img-responsive"
+                         src="images/person/thumbs/anne.jpeg"/><br/>
+                    Anne Milgram</a><br/>NYU Law<br/>(advisory board)
+                </div>
+
+                <div class="person-extra col-xs-3 col-sm-2 col-md-2 col-lg-1">
+                  <a href="http://www.cs.cmu.edu/~wing">
+                    <img class="img-rounded img-responsive"
+                         src="images/person/thumbs/jeannette.jpeg"/><br/>
+                    Jeannette M. Wing</a><br/>Columbia University<br/>(advisory board)
+                </div>
+
+                </center>
+              </div>
             </div>
-
-            <div class="person col-xs-6 col-sm-4 col-md-3 col-lg-2">
-              <a href="http://www.cs.cmu.edu/~mfredrik/">
-                <img class="img-rounded img-responsive"
-                     src="images/person/thumbs/matt.jpeg"/><br/>
-                Matt Fredrikson</a><br/>CMU<br/>(co-principal investigator)
-            </div>
-
-            <div class="person col-xs-6 col-sm-4 col-md-3 col-lg-2">
-              <a href="https://www.cylab.cmu.edu/education/faculty/mengshoel.html">
-                <img class="img-rounded img-responsive"
-                     src="images/person/thumbs/ole.jpeg"/><br/>
-              Ole Mengshoel</a><br/>CMU<br/>(co-principal investigator)
-            </div>
-
-            <div class="person col-xs-6 col-sm-4 col-md-3 col-lg-2">
-              <a href="https://nissenbaum.tech.cornell.edu">
-                <img class="img-rounded img-responsive"
-                     src="images/person/thumbs/helen.jpeg"/><br/>
-              Helen Nissenbaum</a><br/>Cornell Tech<br/>(co-principal investigator)
-            </div>
-
-            <div class="person col-xs-6 col-sm-4 col-md-3 col-lg-2">
-              <a href="https://rist.tech.cornell.edu/">
-                <img class="img-rounded img-responsive"
-                     src="images/person/thumbs/tom.jpeg"/><br/>
-              Tom Ristenpart</a><br/>Cornell Tech<br/>(co-principal investigator)
-            </div>
-
-            <div class="person col-xs-6 col-sm-4 col-md-3 col-lg-2">
-              <a href="http://www1.icsi.berkeley.edu/~mct/">
-                <img class="img-rounded img-responsive"
-                     src="images/person/thumbs/michael.jpeg"/><br/>
-              Michael C. Tschantz</a><br/>ICSI<br/>(co-principal investigator)
-            </div>
-
-            <div class="person-extra col-xs-3 col-sm-2 col-md-2 col-lg-1">
-              <a href="http://piotr.mardziel.com">
-                <img class="img-rounded img-responsive"
-                     src="images/person/thumbs/piotr.jpeg"/><br/>
-                Piotr Mardziel</a><br/>CMU<br/>(senior person)
-            </div>
-
-            <div class="person-extra col-xs-3 col-sm-2 col-md-2 col-lg-1">
-              <a href="http://www.andrew.cmu.edu/user/achoulde">
-                <img class="img-rounded img-responsive"
-                     src="images/person/thumbs/alexandra.jpeg"/><br/>
-                Alexandra Chouldechova</a><br/>CMU<br/>(collaborator)
-            </div>
-
-            <div class="person-extra col-xs-3 col-sm-2 col-md-2 col-lg-1">
-              <a href="http://saikat.guha.cc/">
-                <img class="img-rounded img-responsive"
-                     src="images/person/thumbs/saikat.jpeg"/><br/>
-                Saikat Guha</a><br/>Microsoft Research<br/>(collaborator)
-            </div>
-
-            <div class="person-extra col-xs-3 col-sm-2 col-md-2 col-lg-1">
-              <a href="http://www.cs.cmu.edu/~./neill/">
-                <img class="img-rounded img-responsive"
-                     src="images/person/thumbs/daniel.jpeg"/><br/>
-                Daniel Neill</a><br/>CMU<br/>(collaborator)
-            </div>
-
-            <div class="person-extra col-xs-3 col-sm-2 col-md-2 col-lg-1">
-              <a href="http://pages.cs.wisc.edu/~dpage/">
-                <img class="img-rounded img-responsive"
-                     src="images/person/thumbs/david.jpeg"/><br/>
-                David Page</a><br/>University of
-                     Wisconsin-Madison<br/>(collaborator, advisory board)
-            </div>
-
-            <div class="person-extra col-xs-3 col-sm-2 col-md-2 col-lg-1">
-              <a href="http://www.heinz.cmu.edu/faculty-and-research/faculty-profiles/faculty-details/index.aspx?faculty_id=9">
-                <img class="img-rounded img-responsive"
-                     src="images/person/thumbs/alfred.jpeg"/><br/>
-                Alfred Blumstein</a><br/>CMU<br/>(advisory board)
-            </div>
-
-            <div class="person-extra col-xs-3 col-sm-2 col-md-2 col-lg-1">
-              <a href="http://www.law.nyu.edu/centers/adminofcriminallaw/facultyandstaff/annemilgram">
-                <img class="img-rounded img-responsive"
-                     src="images/person/thumbs/anne.jpeg"/><br/>
-                Anne Milgram</a><br/>NYU Law<br/>(advisory board)
-            </div>
-
-            <div class="person-extra col-xs-3 col-sm-2 col-md-2 col-lg-1">
-              <a href="http://www.cs.cmu.edu/~wing">
-                <img class="img-rounded img-responsive"
-                     src="images/person/thumbs/jeannette.jpeg"/><br/>
-                Jeannette M. Wing</a><br/>Columbia University<br/>(advisory board)
-            </div>
-
-            </center>
-            
           </div>
-          </div>
-          </div>
+        </div>
         
         <div class="col-xs-12 col-md-6 col-lg-6">
           <div class="panel panel-default">
-            <div class="panel-heading"><h2><a name="papers"></a>Papers</h2></div>
-            <div class="panel-body">
+            <div class="panel-heading"><h4><a name="papers"></a>Papers</h4></div>
+            <div class="panel-body list">
               <ul class="paper-list">
                 <li><img src="images/icon_report.svg"/>2017 arXiv. <a href="https://arxiv.org/abs/1707.08120">Proxy Discrimination in Data-driven Systems</a></li>
                 <li><img src="images/icon_report.svg"/>2017 CCS. <a href="https://arxiv.org/abs/1705.07807">Use Privacy in Data-driven Systems</a></li>
@@ -359,13 +388,11 @@
 
         <div class="col-xs-12 col-md-6 col-lg-6">
           <div class="panel panel-default">
-            <div class="panel-heading"><h2><a name="events"></a>Events</h2></div>
-            <div class="panel-body">
-              <h4>SaTC Workshop 2018</h4><br/>
-              <h4>SaTC Workshop 2017</h4><br/>
-
-              <h4>Related Events</h4>
+            <div class="panel-heading"><h4><a name="events"></a>Events</h4></div>
+            <div class="panel-body list">
               <ul>
+                <li>SaTC Workshop 2018</li>
+                <li>SaTC Workshop 2017</li>
                 <li><a href="https://fatconference.org/">Conference on
                   Fairness, Accountability, and Transparency</a>
                   (FAT*)<br/> 2018: February 23-24
